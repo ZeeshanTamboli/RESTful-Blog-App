@@ -5,6 +5,8 @@ var expressSanitizer = require("express-sanitizer"),
     express          = require("express"),
     app              = express();
 
+const port = process.env.PORT || 3000;
+
 //APP CONFIG
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost:27017/restful_blog_app", {
@@ -111,6 +113,6 @@ app.delete("/blogs/:id", function(req, res) {
   });
 });
 
-app.listen(3000, function() {
-  console.log("SERVER IS RUNNING");
+app.listen(port, function() {
+  console.log(`Server is up on port ${port}`);
 });
