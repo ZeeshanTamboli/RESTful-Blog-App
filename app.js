@@ -6,10 +6,10 @@ var expressSanitizer = require("express-sanitizer"),
     app              = express();
 
 const port = process.env.PORT || 3000;
-//"mongodb://localhost:27017/restful_blog_app"
+var url = process.env.MONGOLAB_URI || "mongodb://localhost:27017/restful_blog_app";
 
 //APP CONFIG
-mongoose.connect("mongodb://ZeeshanTamboli:reshuaunty@ds117615.mlab.com:17615/restful_blog_app", {
+mongoose.connect(url, {
   useMongoClient: true,
 });
 app.use(bodyParser.urlencoded({extended: true}));
