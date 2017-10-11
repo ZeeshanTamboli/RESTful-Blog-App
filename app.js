@@ -6,7 +6,6 @@ var expressSanitizer = require("express-sanitizer"),
     app              = express();
 
 const port = process.env.PORT || 3000;
-SET MONGOLAB_URI = "mongodb://ZeeshanTamboli:reshuaunty@ds117615.mlab.com:17615/restful_blog_app";
 
 //APP CONFIG
 mongoose.Promise = global.Promise;
