@@ -15,5 +15,5 @@
   5. express-sanitizer
   
   # Deployed
-  The app is deployed [here]()
+  The app is deployed [here](https://infinite-brushlands-75090.herokuapp.com/) at Heroku. (Also used [MongoLab](https://mlab.com/))
  
